@@ -126,6 +126,20 @@
 
 		</div>
 
+		<!-- RESUME -->
+		<div id="resume" class="collapse">
+			<div class="card card-body bg-success text-white py-5">
+				<h2>My Résumé</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur, eaque perferendis ipsum aspernatur minima.</p>
+			</div>
+		</div>
+
+		<!-- PORTFOLIO -->
+		<div id="portfolio" class="collapse"></div>
+
+		<!-- CONTACT -->
+		<div id="contact" class="collapse"></div>
+
 		<!-- FOOTER -->
 		<footer id="main-footer" class="p-5 bg-dark text-white">
 			<div class="row">
@@ -143,6 +157,12 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Script to close other ports when opening a new one: -->
+	<script>
+		$( '.port-item' ).click( function() {
+			$( '.collapse' ).collapse( 'hide' );
+		} );
+	</script>
 
 </body>
 </html>
