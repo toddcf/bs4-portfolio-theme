@@ -1,6 +1,6 @@
 # Bootstrap 4 Beta portfolio theme
 
-![Glozzom](https://github.com/toddcf/glozzom/blob/master/src/img/image3.jpg "Glozzom")
+![Bootstrap 4 Beta Portfolio Theme](https://github.com/toddcf/bs4-portfolio-theme/blob/master/src/img/portfolio-stock.jpg "Bootstrap 4 Beta Portfolio Theme")
 
 ## Technologies Used
 
