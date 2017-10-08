@@ -9,3 +9,8 @@
 - SCSS
 - jQuery
 - Gulp
+- Ekko Lightbox
+
+## Future Iterations
+
+- Fix `.port-items` so they don't extend past the right margin of the header on screens below 465px.
