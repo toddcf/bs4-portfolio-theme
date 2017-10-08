@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Favicon -->
@@ -181,7 +182,29 @@
 		</div>
 
 		<!-- PORTFOLIO -->
-		<div id="portfolio" class="collapse"></div>
+		<div id="portfolio" class="collapse">
+
+			<div class="card card-body bg-warning py-5">
+				<h3>My Portfolio</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ut!</p>
+			</div>
+
+			<div class="card card-body py-5">
+				<h3>What Have I Built?</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, possimus.</p>
+				<div class="row no-gutters">
+					<div class="col-md-3">
+						<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+							<img src="https://unsplash.it/600.jpg?image=251" alt="Image 251" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+
+		</div>
 
 		<!-- CONTACT -->
 		<div id="contact" class="collapse"></div>
@@ -203,11 +226,21 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<!-- Script to close other ports when opening a new one: -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+	
 	<script>
+
+		// Close old port item when new one is clicked.
 		$( '.port-item' ).click( function() {
 			$( '.collapse' ).collapse( 'hide' );
 		} );
+
+		// Ekko Lightbox:
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		    event.preventDefault();
+		    $(this).ekkoLightbox();
+		});
+
 	</script>
 
 </body>
